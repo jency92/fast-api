@@ -3,14 +3,6 @@ kind: Pod
 metadata:
   name: fast-api
 spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      tier: frontend
-  template:
-    metadata:
-      labels:
-        tier: frontend
   containers:
   - name: fast-api
     image: jency92/fast-api1
